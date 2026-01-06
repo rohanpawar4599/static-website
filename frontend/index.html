@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AWS Static Website Deployment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6fb;
+            color: #2c2c2c;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #5f6df0, #7b5cd6);
+            color: #ffffff;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 14px;
+            opacity: 0.95;
+        }
+
+        /* Main Section */
+        main {
+            display: flex;
+            justify-content: center;
+            margin-top: 90px;
+            padding: 20px;
+        }
+
+        /* Card */
+        .card {
+            background: #ffffff;
+            max-width: 640px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 14px;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+            text-align: center;
+        }
+
+        .card h2 {
+            color: #4f46e5;
+            margin-bottom: 18px;
+            font-size: 24px;
+        }
+
+        .card p {
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 28px;
+            color: #444;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            background: linear-gradient(90deg, #4f46e5, #7b5cd6);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🚀 AWS Static Website Deployment test</h1>
+        <p>Amazon S3 • Amazon CloudFront • GitHub Actions CI/CD</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Welcome</h2>
+            <p>
+                This static website is hosted on <strong>Amazon S3</strong> and delivered globally
+                through <strong>Amazon CloudFront</strong> using secure HTTPS.
+                The deployment process is fully automated using
+                <strong>GitHub Actions</strong>, enabling continuous integration and continuous deployment (CI/CD)
+                whenever changes are pushed to the repository.
+            </p>
+
+            <!-- REPLACE YOUR GITHUB REPOSITORY LINK BELOW -->
+            <a href="https://github.com/rohanpawar4599/static-website"
+   target="_blank"
+   class="btn">
+    View Source Code on GitHub
+</a>
+
+        </div>
+    </main>
+
+    <footer>
+        © 2026 | Cloud Deployment Project | AWS
+    </footer>
+
+</body>
+</html>
